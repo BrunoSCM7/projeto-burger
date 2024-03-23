@@ -20,6 +20,7 @@ function App() {
 
     const orderValue = inputOrder.current.value.trim();
     const nameValue = inputName.current.value.trim();
+    const baseUrl = "https://api-node-hamburgueria.vercel.app/"
 
     if (orderValue == '') {
       alert('Preencha o campo "Pedido"')
@@ -31,7 +32,7 @@ function App() {
       return
     }
 
-    const { data: newOrder } = await axios.post("http://localhost:3001/orders",
+    const { data: newOrder } = await axios.post(`${baseUrl}/orders`,
       {
         order: inputOrder.current.value,
         clientName: inputName.current.value
