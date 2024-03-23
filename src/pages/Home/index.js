@@ -20,7 +20,7 @@ function App() {
 
     const orderValue = inputOrder.current.value.trim();
     const nameValue = inputName.current.value.trim();
-    const baseUrl = "https://api-node-hamburgueria.vercel.app/"
+    const baseUrl = "https://api-node-hamburgueria.vercel.app"
 
     if (orderValue == '') {
       alert('Preencha o campo "Pedido"')

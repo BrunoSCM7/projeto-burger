@@ -15,7 +15,7 @@ function Orders() {
   const [orders, setOrders] = useState([])
   const history = useHistory()
 
-  const baseUrl = "https://api-node-hamburgueria.vercel.app/"
+  const baseUrl = "https://api-node-hamburgueria.vercel.app"
 
   useEffect(() => {
     async function fetchOrders() {
